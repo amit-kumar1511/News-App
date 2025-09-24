@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 32, 32);
+    padding: 15px;
+    color: white;
+}
+.navbar span{
+    color: blue;
+}
+.navbar input {
+    border: none;
+    outline: none;
+    border: 2px solid rgb(71, 70, 69);
+    padding: 10px;
+    border-start-start-radius: 15px;
+    padding-left: 15px;
+background-color: rgb(54, 53, 52);
+color: white;
+}
+.navbar .btn{
+     border: none;
+    outline: none;
+    padding: 10px;
+ border-end-end-radius: 15px;
+background-color: rgb(54, 53, 52);
+color: white;
+cursor: pointer;
+border: 2px solid rgb(71, 70, 69);
+}
+.navbar .btn:hover{
+    background-color: rgb(46, 45, 44);
+}
