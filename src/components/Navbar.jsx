@@ -8,7 +8,8 @@ const Navbar = () => {
   const [newsData, setNewsData] = useState(null);
   const [loading, setLoading] = useState(false); 
 
-  const API_KEY = "72cc7f7691d341f49f4eb01327188503";
+
+  const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
   const getData = async () => {
     if (!search) return;
@@ -53,9 +54,9 @@ const Navbar = () => {
             />
             <button onClick={getData} className='btn'>Search</button>
           </div>
-<div>
+<div className='sign'>
    <SignedOut>
-          <SignInButton />
+          <SignInButton className='login'/>
         </SignedOut>
         <SignedIn>
           <UserButton />
